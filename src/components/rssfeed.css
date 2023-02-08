@@ -1,0 +1,104 @@
+   /*
+   * rssFeed - Your rss feed on your website
+   *
+   * http://noprobweb.com/rss_feed_flux_jquery.php
+   *
+   * Version :  1.6
+   *
+   * Copyright (c) 2014 NoProbWeb (http://www.noprobweb.com)
+   *
+   * Modified by Henry LaFleur Jan 2016
+   *
+   * Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php)
+   * 
+   * Built on top of the jQuery library
+   * http://jquery.com
+   * 
+   #feed:
+   border-radius:5px;
+   background-color:#23BBD2;
+   -moz-box-shadow: 5px 5px 3px #222; 
+   -webkit-box-shadow: 5px 5px 3px #222; 
+   box-shadow: 5px 5px 3px #222;
+
+   */
+   #rssFeed, .rssFeed{
+      width:auto;
+      }
+      #feed, .feed{
+      color:black;
+      width:auto;
+      height:auto;
+      padding : 5px 5px 5px 5px;
+      border:1px solid #DDD;
+      }
+      #titre, .titre{
+      width:auto;
+      background-color:white;
+      text-align:left;
+      border:1px solid #DDD;
+      background-color:#F5F5F5;
+      background-image:linear-gradient(#F5F5F5 0px, #E8E8E8 100%);
+      pading:0.5em;
+      }
+      #titre img, .titre img{
+      border-radius:5px;
+      padding:5px;
+      border:1px solid #000;
+      margin-right:1em;
+      vertical-align:top;
+      }
+      #titre a, .titre a{
+      text-decoration:none;
+      color:#333;
+      font-size:125%;
+      }
+      #title, .title{
+      color:#333;
+      font-weight:bold;
+      padding : 5px 0 5px 0;
+      }
+      #resume, .resume{
+      height:0px;
+      display:none;
+      padding : 0 0 5px 0;  
+      }
+      .resume img {
+         width: 150px;
+      }
+      #resume a, .resume a{
+      color:#444444;
+      }
+      .title:hover .resume {
+         animation-duration: 1s;
+         animation-name: expand-article;
+         display:inline-block;
+      }
+      #title a, .title a{
+      color: #444444;
+      }
+      #time, .time{
+      color: #666;
+      font-weight:normal;
+      }
+      #loading, .loading{
+      padding :25px 0 0 0; 
+      background-color:white;color:black;
+      }
+
+      @keyframes expand-article
+      {
+         from {
+            height: 0px;
+            overflow-y:hidden;
+         }
+
+         95% {
+            height:300px
+         }
+
+         to {
+            height:300px;
+            overflow-y:scroll;
+         }
+      }
