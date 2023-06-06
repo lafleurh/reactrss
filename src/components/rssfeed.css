@@ -73,6 +73,9 @@
          animation-duration: 1s;
          animation-name: expand-article;
          display:inline-block;
+	 height:300px;
+	 overflow:auto;
+	 width:100%;
       }
       #title a, .title a{
       color: #444444;
@@ -90,7 +93,7 @@
       {
          from {
             height: 0px;
-            overflow-y:hidden;
+            overflow:hidden;
          }
 
          95% {
@@ -99,6 +102,6 @@
 
          to {
             height:300px;
-            overflow-y:scroll;
+            overflow:auto;
          }
       }

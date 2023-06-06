@@ -15,7 +15,14 @@ const config = [
     {
         input: pkg.source,
         output: [
-            { file: pkg.main, format: 'cjs' }
+            {
+		file: pkg.main,
+		format: 'umd',
+		name: 'reactrss',
+		globals: {
+		    react: "React"
+		}
+	    }
         ],
         plugins: [
             resolve({
